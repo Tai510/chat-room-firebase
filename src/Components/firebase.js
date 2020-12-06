@@ -15,4 +15,4 @@ const app = firebase.initializeApp({
   const firestore = app.firestore();
   export default app;
   export { firestore };
-  
+
