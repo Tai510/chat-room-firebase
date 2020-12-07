@@ -34,7 +34,6 @@ body {
 }
 
 main {
-  padding: 10px;
   height: 80vh;
   margin: 0vh 0 10vh;
   overflow-y: scroll;
@@ -45,6 +44,7 @@ main {
   padding-left: 0;
   padding-top: 0;
   border-top: 1px solid grey;
+  margin-bottom: 0;
 }
 
 main::-webkit-scrollbar {
@@ -63,34 +63,35 @@ main::-webkit-scrollbar-thumb {
 }
 
 form {
-  height: 10vh;
+  height: 50px;
   position: fixed;
   bottom: 0;
-  background-color: rgb(24, 23, 23);
   width: 100%;
-  max-width: 728px;
+  max-width: 726px;
   display: flex;
   font-size: 1.5rem;
+  background: white;
+  border: 1px solid lightgrey;
 }
 
 form button {
   width: 20%;
-  background-color: rgb(56, 56, 143);
+  background-color: rgb(222 115 99);
+  outline: none;
 }
 
 input {
   line-height: 1.5;
   width: 100%;
-  font-size: 1.5rem;
-  background: rgb(58, 58, 58);
-  color: white;
+  font-size: 22px;
+  color: black;
   outline: none;
-  border: none;
+  border: 1px solid lightgray;
   padding: 0 10px;
+  font-family: "Oswald", sans-serif;
 }
 
 button {
-  background-color: #282c34; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -102,7 +103,7 @@ button {
 }
 
 button:disabled {
-  opacity: 0.5;
+  /* opacity: 0.5; */
   cursor: not-allowed;
 }
 
@@ -181,5 +182,5 @@ img {
   padding: 0 20px;
   padding-left: 5px;
   color: orange;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
