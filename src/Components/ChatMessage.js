@@ -1,6 +1,7 @@
 import React from "react";
 import { auth } from "./firebase";
 
+
 function ChatMessage(props) {
   const { text, uid, photoURL, user } = props.message;
 
@@ -17,7 +18,7 @@ function ChatMessage(props) {
             }
           />
         </div>
-        <div className='message-div'>
+        <div className="message-div">
           <p>{text}</p>
         </div>
       </div>
