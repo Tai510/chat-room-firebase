@@ -2,7 +2,7 @@ import React from "react";
 import { auth } from "./firebase";
 
 function ChatMessage(props) {
-  const { text, uid, photoURL } = props.message;
+  const { text, uid, photoURL, user } = props.message;
 
   const messageClass = uid === auth.currentUser.uid ? "sent" : "received";
 
@@ -16,7 +16,6 @@ function ChatMessage(props) {
               "https://api.adorable.io/avatars/23/abott@adorable.png"
             }
           />
-          <h4>User</h4>
         </div>
         <div className='message-div'>
           <p>{text}</p>

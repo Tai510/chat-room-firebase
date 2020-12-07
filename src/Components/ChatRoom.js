@@ -33,11 +33,11 @@ function ChatRoom() {
       <div>
         <div className='chat-header'>
         <h1>Sonoma Chat 💬</h1>
-        {/* <SignOut /> */}
+        <h4>{auth.currentUser.displayName}</h4>
         </div>
         <main>
           {messages &&
-            messages.map((msg) => <ChatMessage key={msg.id} message={msg} />)}
+            messages.map((msg) => <ChatMessage key={msg.id} message={msg} user={msg.email}  />)}
   
           <span ref={dummy}></span>
         </main>

@@ -64,7 +64,7 @@ main::-webkit-scrollbar-thumb {
 
 form {
   height: 50px;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   width: 100%;
   max-width: 726px;
