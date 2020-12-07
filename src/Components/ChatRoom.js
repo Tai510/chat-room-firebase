@@ -30,7 +30,11 @@ function ChatRoom() {
     };
   
     return (
-      <>
+      <div>
+        <div className='chat-header'>
+        <h1>Sonoma Chat 💬</h1>
+        {/* <SignOut /> */}
+        </div>
         <main>
           {messages &&
             messages.map((msg) => <ChatMessage key={msg.id} message={msg} />)}
@@ -42,14 +46,14 @@ function ChatRoom() {
           <input
             value={formValue}
             onChange={(e) => setFormValue(e.target.value)}
-            placeholder="say something nice"
+            placeholder="Enter your message..."
           />
   
           <button type="submit" disabled={!formValue}>
-            🕊️
+            🦁
           </button>
         </form>
-      </>
+      </div>
     );
   }
 

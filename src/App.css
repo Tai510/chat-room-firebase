@@ -36,10 +36,15 @@ body {
 main {
   padding: 10px;
   height: 80vh;
-  margin: 10vh 0 10vh;
+  margin: 0vh 0 10vh;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
+  background: white;
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 0;
+  border-top: 1px solid grey;
 }
 
 main::-webkit-scrollbar {
@@ -47,11 +52,14 @@ main::-webkit-scrollbar {
 }
 
 main::-webkit-scrollbar-track {
-  background: #1e1e24;
+  background: white;
 }
 
 main::-webkit-scrollbar-thumb {
-  background: #6649b8;
+  background: white;
+  border: 10px solid grey;
+  border-radius: 25px;
+  background-clip: content-box;
 }
 
 form {
@@ -69,7 +77,6 @@ form button {
   width: 20%;
   background-color: rgb(56, 56, 143);
 }
-
 
 input {
   line-height: 1.5;
@@ -99,7 +106,6 @@ button:disabled {
   cursor: not-allowed;
 }
 
-
 .sign-in {
   color: #282c34;
   background: white;
@@ -107,10 +113,8 @@ button:disabled {
   margin: 0 auto;
 }
 
-
-
-
-ul, li {
+ul,
+li {
   text-align: left;
   list-style: none;
 }
@@ -120,7 +124,7 @@ p {
   margin-bottom: 12px;
   line-height: 24px;
   padding: 10px 20px;
-  border-radius: 25px;
+  /* border-radius: 25px; */
   position: relative;
   color: white;
   text-align: center;
@@ -129,26 +133,53 @@ p {
 .message {
   display: flex;
   align-items: center;
+  height: 45px;
+  font-family: "Oswald", sans-serif;
 }
 
-
 .sent {
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
 }
 
 .sent p {
-  color: white;
-  background: #0b93f6;
-  align-self: flex-end;
+  color: orange;
+  margin: 0;
 }
 .received p {
-  background: #e5e5ea;
   color: black;
+  margin: 0;
 }
 
 img {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
   margin: 2px 5px;
+}
+
+.chat-header {
+  border: 1px solid white;
+  background: white;
+}
+
+.user-div {
+  display: flex;
+  border: 1px solid lightgrey;
+  height: 44px;
+}
+
+.message-div {
+  display: flex;
+  border: 1px solid lightgrey;
+  height: 44px;
+  width: 100%;
+}
+
+.user-div h4 {
+  font-size: 18px;
+  margin: 0;
+  margin-top: 8px;
+  padding: 0 20px;
+  padding-left: 5px;
+  color: orange;
+  font-family: 'Oswald', sans-serif;
 }
