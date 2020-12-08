@@ -18,7 +18,7 @@ body {
   height: 12vh;
   min-height: 50px;
   color: white;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   max-width: 728px;
   top: 0;
@@ -40,13 +40,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* min-height: 100vh;
-  background-color: rgb(40, 37, 53); */
+  border: 1px solid black;
+  background: #de7a7a;
+  /* height: 390px; */
+
+  min-height: 60vh;
+  /* background-color: rgb(40, 37, 53); */
 }
 
 main {
   height: 80vh;
-  margin: 11vh 0 10vh;
+  /* margin: 11vh 0 10vh; */
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
@@ -139,6 +143,7 @@ button:disabled {
   background: white;
   max-width: 400px;
   margin: 0 auto;
+  height: 45px;
 }
 
 ul,
