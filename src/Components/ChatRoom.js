@@ -3,6 +3,7 @@ import { firestore, auth } from "../Components/firebase";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import ChatMessage from "./ChatMessage";
 
+
 function ChatRoom() {
   const dummy = useRef();
   const messagesRef = firestore.collection("messages");
@@ -31,7 +32,7 @@ function ChatRoom() {
   return (
     <div>
       <div className="chat-header">
-        <h1>Sonoma Chat 💬</h1>
+        <h1 className='header-title'>Sonoma Chat 💬</h1>
         <h4>{auth.currentUser.displayName}</h4>
       </div>
       <main>
